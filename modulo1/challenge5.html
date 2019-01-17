@@ -1,0 +1,36 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <script>
+function escrever(usuarios) {
+  for (usuario of usuarios) {
+    console.log
+    ( 
+        "O " + usuario.nome + " possui as habilidades: " + usuario.habilidades.join(", ")
+    );
+  }
+}
+var usuarios = [
+
+  {
+    nome: "Diego",
+    habilidades: ["Javascript", "ReactJS", "Redux"]
+  },
+
+  {
+    nome: "Gabriel",
+    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+  }
+];
+
+escrever(usuarios);
+    </script>
+</body>
+</html>

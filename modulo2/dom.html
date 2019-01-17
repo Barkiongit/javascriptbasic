@@ -1,0 +1,41 @@
+!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div id='app'>
+        <input type='text' name="nome" id="nome" />
+        <button class="botao"> Adcionar </button>
+    </div>
+    <script>
+        /** var inputElement = document.getElementById('nome');
+
+        console.log(inputElement); // procura elemento pelo id
+
+        var inputElement2 = document.getElementsByTagName('input');
+        
+        console.log(inputElement2); // procura todos os elementos pela tag
+
+        var inputElement3 = document.getElementsByClassName
+
+        console.log(inputElement3); // procura todos os elementos pela classe
+
+        var inputElement4 = document.querySelector('div#app input'); //queryselector pela id
+        var inputElement5 = document.querySelector('input[name=nome]'); // queryselector pelo nome */
+
+        var btnElement = document.querySelector('button.botao');
+        var inputElement = document.querySelector('input[name=nome]');
+
+        btnElement.onclick = function () {
+            var text = inputElement.value;
+            alert(text);
+        }
+
+    </script>
+</body>
+
+</html>

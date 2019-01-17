@@ -1,0 +1,40 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <script>
+        function retornaSexo(sexo){
+            
+            if(sexo === 'M'){  // == igualdade | === igualdade de valor e tipo de var
+                return 'Masculino';
+            }else if (sexo === 'F'){
+                return 'Feminino'
+            }else{
+                return 'Outro'
+            }   
+        }
+        var result1 = retornaSexo('abiasdi');
+        console.log(result1);
+
+        function exemploSwitch(sexo) {
+            switch (sexo){
+                case 'M':
+                    return 'Masculino'
+                case 'F':
+                    return 'Feminino'
+                default:
+                    return 'Outro'
+            }
+        }
+        var result2 = exemploSwitch('M');
+        console.log(result2);
+    </script>
+
+</body>
+</html>

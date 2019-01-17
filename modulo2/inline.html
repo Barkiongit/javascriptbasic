@@ -1,0 +1,26 @@
+!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div id='app'>
+        <button onclick="showAlert()"> Press Me </button>
+    </div>
+    <div id='app2'>
+        <input onkeypress="showAlert()" />
+    </div>
+    <div id='app3'>
+        <button onmouseover="showAlert()"></button>
+    </div>
+    <script>
+        function showAlert() {
+            alert('button clicked');
+        }
+    </script>
+</body>
+
+</html>
